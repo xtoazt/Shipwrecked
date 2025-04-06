@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipwrecked Auction Game</title>
+  <style>
+    body { font-family: sans-serif; background: #f0f8ff; text-align: center; }
+    #game { max-width: 600px; margin: auto; }
+    .card { border: 1px solid black; padding: 10px; margin: 10px; background: white; }
+    .markers button { margin: 5px; }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <h1>🌴 Shipwrecked Auction 🌊</h1>
+    <div id="cardArea" class="card">Press Start to reveal a card.</div>
+    <button onclick="startGame()">Start Game</button>
+    <div class="markers">
+      <h3>Place Your Marker:</h3>
+      <button onclick="placeMarker('Pass')">Pass</button>
+      <button onclick="placeMarker('Stop')">Stop</button>
+      <button onclick="placeMarker('Strike')">Strike</button>
+    </div>
+    <p id="status"></p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
